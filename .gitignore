@@ -1,0 +1,8 @@
+/consumer/log/*.log
+/consumer//tmp
+/consumer/public/*
+/consumer/log/*
+.DS_Store
+/consumer/app/.DS_Store
+/consumer/app/assets/.DS_Store
+/consumer/app/assets/images/.DS_Store
