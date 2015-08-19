@@ -17,7 +17,7 @@ class TasksController < ApplicationController
 
   def create
     @task = Task.new(task_params)
-    if @task.save
+    if @task.valid? && @task.save
       redirect_to @task, notice: 'Task was successfully created.'
     else
       render :new
@@ -25,7 +25,7 @@ class TasksController < ApplicationController
   end
 
   def update
-    if @task.update(task_params)
+    if @task.valid? && @task.update(task_params)
       redirect_to @task, notice: 'Task was successfully updated.'
     else
       render :edit
