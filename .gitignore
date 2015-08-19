@@ -1,5 +1,6 @@
 /consumer/log/*.log
-/consumer//tmp
+/consumer/tmp/
+/consumer/tmp/*
 /consumer/public/*
 /consumer/log/*
 .DS_Store
