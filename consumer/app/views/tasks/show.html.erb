@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<p>Title: <%= @task.name %></p>
+<p>Start Time: <%= @task.start_time.strftime("%d/%m/%Y %H:%M") %></p>
+<p>End Time: <%= @task.end_time.strftime("%d/%m/%Y %H:%M") %></p>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>
